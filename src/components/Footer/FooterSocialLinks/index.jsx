@@ -39,34 +39,50 @@ const SocialLinks = (props) => {
           variants={list}
           className="flex w-[220px] justify-between"
         >
-          <motion.li variants={item}>
+          <motion.a
+            href="https://github.com/devstardude"
+            target="_blank"
+            variants={item}
+          >
             <AiFillGithub
               size="30px"
               color="white"
               className="transform transition duration-500 hover:scale-[1.3] cursor-pointer"
             />
-          </motion.li>
-          <motion.li variants={item}>
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/i_m_a.r.u.n/"
+            target="_blank"
+            variants={item}
+          >
             <AiFillInstagram
               size="30px"
               color="white"
               className="transform transition duration-500 hover:scale-[1.3] cursor-pointer"
             />
-          </motion.li>
-          <motion.li variants={item}>
+          </motion.a>
+          <motion.a
+            href="https://linkedin.com/in/arun-shekhar"
+            target="_blank"
+            variants={item}
+          >
             <AiFillLinkedin
               size="30px"
               color="white"
               className="transform transition duration-500 hover:scale-[1.3] cursor-pointer"
             />
-          </motion.li>
-          <motion.li variants={item}>
+          </motion.a>
+          <motion.a
+            href="https://www.youtube.com/channel/UCEL_3xlrevncI0OWEzaIY3Q"
+            target="_blank"
+            variants={item}
+          >
             <AiFillYoutube
               size="30px"
               color="white"
               className="transform transition duration-500 hover:scale-[1.3] cursor-pointer"
             />
-          </motion.li>
+          </motion.a>
         </motion.ul>
       </div>
     </React.Fragment>
