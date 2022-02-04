@@ -1,0 +1,11 @@
+.Techbox-Icon {
+  @apply flex justify-center;
+}
+.Techbox-Title {
+  @apply text-gray-200 font-bold pt-[10px] text-center;
+  @apply text-[20px] md:text-[25px];
+}
+.Techbox-desc {
+  @apply text-gray-500 pt-[8px] text-center;
+  @apply text-[15px] md:text-[20px];
+}

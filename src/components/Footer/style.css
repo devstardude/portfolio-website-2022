@@ -1,0 +1,41 @@
+.Footer-Main_Wrapper {
+  @apply pt-[5rem];
+}
+
+.Footer-Secondary-Wrapper {
+  @apply justify-between items-center text-center md:text-left gap-10 md:gap-0;
+  @apply flex flex-col md:flex-row;
+}
+
+.Footer-Main-Text {
+  @apply text-[#9CA3AF] text-[20px];
+}
+
+.Footer-Bottom-Text {
+  @apply pt-[3rem] pb-[2rem] flex justify-center items-center text-[#9CA3AF];
+  @apply text-[15px] sm:text-[18px] md:text-[20px] ;
+}
+.Heart {
+  animation: hearting 1.5s ease infinite;
+}
+
+@keyframes hearting {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}

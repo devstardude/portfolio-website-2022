@@ -1,0 +1,15 @@
+.Social-divider {
+  @apply h-[1px] border-b-[2px] border-[#212D45] pt-[10px] w-[90%] md:hidden;
+}
+.Social-Main-Wrapper {
+  @apply h-full flex items-center;
+  @apply pt-6 md:pt-0;
+}
+
+.Social-Icons-List {
+  @apply flex w-[220px] justify-between;
+}
+
+.Social-Icons {
+  @apply transform transition duration-500 hover:scale-[1.3] cursor-pointer;
+}

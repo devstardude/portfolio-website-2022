@@ -1,0 +1,4 @@
+.Masthead-Wrapper{
+    @apply h-[70vh] sm:h-[70vh] md:h-[75vh] lg:h-[85vh] ;
+    @apply py-[2rem] sm:py-[3rem] md:py-[4rem] lg:py-[5rem];
+}

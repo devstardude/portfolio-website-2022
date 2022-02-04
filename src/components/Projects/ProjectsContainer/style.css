@@ -1,0 +1,53 @@
+:root {
+  --white: rgb(224, 224, 224);
+  --black: #333;
+  --active-color: #f1f1f1;
+  --border-radius: 40px;
+  --active-cardColor:rgb(65, 145, 249,0.2)
+}
+
+.Tab-List {
+  @apply list-none flex justify-between m-auto max-w-[400px];
+}
+.Tab-Item {
+  @apply relative;
+}
+
+.Tab-Item::before {
+  @apply w-full h-full absolute opacity-[0.2] bg-[#7faaff];
+  content: "";
+  border-radius: var(--border-radius);
+  transition: background 0.5s ease;
+}
+.Tab-Item svg {
+  @apply min-w-[24px] md:min-w-[35px];
+  @apply h-[24px] w-[24px] md:h-[35px] md:w-[35px];
+  fill: var(--white);
+  transition: fill 0.5s ease;
+}
+.Tab-Text {
+  @apply flex items-center  overflow-hidden relative p-[10px];
+  @apply text-[15px] md:text-[20px];
+}
+
+.Tab-Item.active::before {
+  background: var(--active-color);
+}
+
+.Tab-Item span {
+  @apply font-[700] ml-[10px];
+  transition: color 0.5s ease;
+}
+
+.Tab-Item.active span {
+  color: var(--active-color);
+}
+
+.Tab-Item.active svg {
+  fill: var(--active-color);
+}
+
+.ProjectContainer-Project-Item {
+  @apply gap-10 justify-items-center pt-6;
+  @apply grid grid-cols-1 md:grid-cols-2;
+}

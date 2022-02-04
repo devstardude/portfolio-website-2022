@@ -1,0 +1,5 @@
+.Wrapper{
+    @apply flex flex-col md:flex-row;
+    @apply items-center justify-between;
+    @apply p-6 
+}

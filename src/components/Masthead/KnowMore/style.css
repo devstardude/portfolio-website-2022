@@ -1,0 +1,21 @@
+.Know-Main-Wrapper {
+  @apply pt-[3rem];
+  @apply flex flex-col md:flex-row;
+  @apply items-center;
+  @apply pl-0 md:pl-[5rem] lg:pl-[6rem] xl:pl-[6.5rem];
+}
+
+.Know-Project-Button {
+  @apply flex justify-center items-center transition-all duration-300 cursor-pointer rounded-full border-2 border-white;
+  @apply py-[5px] md:py-[8px];
+  @apply text-white text-[20px];
+  @apply min-w-[10rem] sm:min-w-[12rem];
+  @apply mb-5 md:mb-0 mr-0 md:mr-5;
+}
+
+.Know-Red-Button {
+  @apply bg-red-800 bg-opacity-80  hover:bg-opacity-100;
+}
+.Know-Dull-Button {
+  @apply hover:bg-red-800 hover:bg-opacity-80 ;
+}

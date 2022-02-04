@@ -1,0 +1,37 @@
+.Heading-Main-Wrapper{
+   @apply  pl-[3rem] md:pl-[5rem] lg:pl-[6rem] xl:pl-[6.5rem];
+}
+.Heading-Wrapper {
+  @apply relative transition-all;
+  @apply leading-[3rem] sm:leading-[3.5rem] md:leading-[4rem] lg:leading-[4rem] xl:leading-[4.7rem];
+  /* @apply bg-red-700/20 sm:bg-emerald-900/20 md:bg-yellow-400/20 lg:bg-red-700/20
+  xl:bg-yellow-500/20; */
+
+}
+.Heading-One {
+  @apply absolute text-gray-200 font-semibold -rotate-90 ;
+  @apply top-[5rem] sm:top-[3.5rem] md:top-[5rem] lg:top-[5.5rem] xl:top-[6rem];
+  @apply left-[-4.5rem] sm:left-[-4.2rem] md:left-[-6rem] lg:left-[-6.5rem] xl:left-[-7.5rem];
+  @apply text-[20px] sm:text-[20px] md:text-[27px] lg:text-[30px] xl:text-[35px];
+}
+
+.Heading-Two {
+  @apply text-gray-200 font-semibold transition-all;
+  @apply text-[20px] sm:text-[22px] md:text-[25px] lg:text-[30px] xl:text-[30px];
+}
+
+.Heading-Three {
+  @apply text-white font-extrabold ;
+  @apply leading-[3.7rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-[6.5rem];
+  @apply text-[47px] sm:text-[53px] md:text-[70px] lg:text-[75px] xl:text-[90px];
+}
+
+.Heading-Four {
+  @apply flex items-baseline text-gray-200 font-bold;
+  @apply text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] xl:text-[32px];
+}
+
+.Heading-Five {
+  @apply text-gray-200;
+  @apply text-[13px] sm:text-[15px] md:text-[18px] lg:text-[18px] xl:text-[20px];
+}

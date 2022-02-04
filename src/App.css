@@ -1,0 +1,22 @@
+body {
+  background-color: #0f1624;
+  -webkit-tap-highlight-color: transparent;
+}
+.Font-explatus {
+  font-family: "Expletus Sans", sans-serif;
+}
+.Font-mulish {
+  font-family: "Mulish", sans-serif;
+}
+.App-Secondary-Components{
+     @apply  px-[2.5rem] md:px-[5rem] lg:px-[6rem] xl:px-[6.5rem];
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}

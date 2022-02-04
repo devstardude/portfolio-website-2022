@@ -1,0 +1,25 @@
+.Title-Main-Wrapper {
+  @apply flex items-center;
+}
+.Title-Red-Bar {
+  @apply w-[80px] bg-[#991B1B] h-[10px] rounded-full;
+}
+
+.Title-Main-Title {
+  @apply  font-bold pt-[3rem];
+  @apply text-[35px] sm:text-[40px] md:text-[47px]
+}
+.Title-Main-desc {
+  @apply text-[#ffffff80] ;
+  @apply text-[18px] sm:text-[18px] md:text-[22px];
+  @apply leading-[35px] md:leading-[50px];
+}
+
+.TitleText {
+  background: #f2f2f2;
+  background: -webkit-linear-gradient(to right, #f2f2f2 0%, #d4d4d4 78%);
+  background: -moz-linear-gradient(to right, #f2f2f2 0%, #d4d4d4 78%);
+  background: linear-gradient(to right, #f2f2f2 0%, #d4d4d4 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

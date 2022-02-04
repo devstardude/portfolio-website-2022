@@ -1,0 +1,33 @@
+.Root {
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+  font-family: "Mulish", sans-serif !important;
+  background-position: center center;
+ 
+}
+.MuiBox-root {
+  padding: 0 !important;
+}
+.LabelText {
+  font-size: 14px;
+}
+.Tabs {
+  color: #fff;
+}
+.AppBar {
+  @apply border border-white;
+  border-radius: 5px;
+  background-color: var(--active-cardColor) !important;
+  color: white !important;
+  font-family: "Mulish", sans-serif !important;
+}
+.Indicator {
+  border-radius: 3px 3px 0px 0px;
+  height: 8px !important;
+}
+.MuiTabs-indicator {
+  background-color: rgb(185 28 28) !important;
+  height: 5px !important;
+  border-radius: 5px !important;
+}

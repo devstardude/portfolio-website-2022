@@ -1,0 +1,21 @@
+.Logo-Main-Wrapper{
+    @apply flex items-center
+}
+
+.Logo-Wrapper{
+    @apply h-[60px]
+}
+
+.Logo-Icon{
+    @apply object-cover invert
+}
+
+.Logo-Text-Wrapper{
+    @apply flex-col
+}
+.Logo-Text-Main{
+    @apply text-white font-semibold text-[20px]
+}
+.Logo-Text-Secondary{
+    @apply text-white text-[9px] pl-[1.7px]
+}

@@ -1,0 +1,10 @@
+.splide__progress__bar{
+    @apply bg-red-700 ;
+}
+
+.splide__pagination__page{
+    @apply bg-[#0F1624] ;
+}
+.splide__pagination__page.is-active {
+    @apply bg-red-700 ;
+}

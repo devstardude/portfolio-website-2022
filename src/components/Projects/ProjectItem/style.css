@@ -1,0 +1,26 @@
+.ProjectItem-Main-Wrapper {
+  @apply p-3 text-white transition-all h-full;
+  background-color: var(--active-cardColor);
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px 0 rgba(21, 26, 94, 0.116);
+}
+.ProjectItem-ImageContainer {
+  @apply w-full rounded-t-[10px] overflow-hidden;
+}
+
+.ProjectItem-TitleContainer {
+  @apply py-3 font-semibold;
+  @apply text-[20px] sm:text-[22px] md:text-[22px];
+}
+.ProjectItem-DescContainer {
+  @apply pb-4 leading-[1.8rem] text-[#e4e1e1];
+  @apply text-[16px] sm:text-[16px] md:text-[18px];
+}
+
+.ProjectItem-TechContainer{
+    @apply flex flex-wrap gap-2;
+}
+.ProjectItem-Tech{
+    @apply bg-[#1b1c1d] px-[10px] py-[3px] rounded-full text-[13px] ;
+    color: var(--active-color);
+}

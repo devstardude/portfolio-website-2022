@@ -1,0 +1,10 @@
+.Tech-Main-Wrapper {
+  @apply pt-[5rem];
+}
+.Tech-Techbox-Wrapper {
+  @apply pt-[4rem];
+}
+.Tech-Techbox-Grid {
+  @apply grid grid-cols-3 gap-10 justify-items-stretch;
+  @apply grid grid-cols-2 md:grid-cols-3;
+}
