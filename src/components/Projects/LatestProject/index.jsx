@@ -1,23 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ModalComponent from "../../shared/ModalComponent";
 import Title from "../../shared/Title";
 
 import "./style.css";
 
-const LatestProject = (props) => {
+const LatestProject = () => {
+  const [showVideo, setShowVideo] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowVideo(true);
+    }, 1400);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <React.Fragment>
       <Title title="Latest Project" />
       <div className="LatestProject-MainWrapper">
         <div className="LatestProject-Youtube video-container">
-          <iframe
-            title="i ARUN SHEKHAR am a Web Developer"
-            className="youtube-container"
-            src="https://www.youtube.com/embed/sncySXQQKFQ"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          {showVideo && (
+            <iframe
+              title="i ARUN SHEKHAR am a Web Developer"
+              className="youtube-container"
+              src="https://www.youtube.com/embed/sncySXQQKFQ"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          )}
         </div>
         <div className="LatestProject-Information">
           <h1>Visite - A place tracker</h1>
