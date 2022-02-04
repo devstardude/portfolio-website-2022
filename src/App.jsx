@@ -11,7 +11,7 @@ import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <div className="Font-explatus">
         <Navbar />
         <Masthead />

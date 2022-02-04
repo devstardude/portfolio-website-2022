@@ -9,5 +9,6 @@
 
 .ModalComponent-Title {
   @apply flex justify-center text-white pb-2;
-  @apply text-[20px] md:text-[25px];
+  @apply text-[20px] md:text-[25px] font-semibold;
+  font-family: "Mulish", sans-serif;
 }

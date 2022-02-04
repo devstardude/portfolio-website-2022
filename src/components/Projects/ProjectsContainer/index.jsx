@@ -138,6 +138,10 @@ const ProjectContainer = (props) => {
                 image={project.image}
                 tech={project.tech}
                 youtubeLink={project.youtubeLink}
+                features={project.features}
+                stack={project.stack}
+                projectLink={project.projectLink}
+                githubLink={project.githubLink}
               />
             </motion.div>
           ))}

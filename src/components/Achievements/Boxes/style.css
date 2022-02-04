@@ -3,11 +3,11 @@
   @apply grid grid-cols-1 md:grid-cols-3;
 }
 .Boxes-Box-Wrapper {
-  @apply bg-[#212D45] rounded-md h-full w-[full] p-6;
+  @apply bg-[#212D45] rounded-md h-full w-[full] p-4;
 }
 .Boxes-Box-Number {
-  @apply text-gray-200 text-[35px] font-bold;
+  @apply text-gray-200 text-[30px] font-bold;
 }
 .Boxes-Box-Text {
-  @apply text-gray-400 text-[20px] font-semibold;
+  @apply text-gray-400 text-[16px] md:text-[20px] font-semibold;
 }

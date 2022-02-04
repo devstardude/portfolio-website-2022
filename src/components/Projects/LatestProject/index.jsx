@@ -31,7 +31,14 @@ const LatestProject = (props) => {
             the user experience.
           </p>
           <div className="flex pt-6">
-            <ModalComponent>
+            <ModalComponent
+              name="Visite - A place tracker"
+              youtubeLink="https://www.youtube.com/embed/ErOUmq8xVZg"
+              features={project.features}
+              stack={project.stack}
+              projectLink={project.projectLink}
+              githubLink={project.githubLink}
+            >
               <div className=" LatestProject-Button">KNOW MORE</div>
             </ModalComponent>
           </div>
@@ -39,6 +46,52 @@ const LatestProject = (props) => {
       </div>
     </React.Fragment>
   );
+};
+
+const project = {
+  features: (
+    <div>
+      <p>
+        🤍 Share Places (Visible to the world)
+        <br />
+        🤍 Wishlist Places (Only visible to the user) <br />
+        🤍 Share Posts in Markdown Format <br />
+        🤍 Like other Profiles and Send Messages <br />
+        🤍 Automatic search any place around the world
+        <br />
+        🤍 Render Map of the address <br />
+        🤍 Public chatbox that shows real-time messages <br />
+        🤍 Admin only protected route that can post global blogposts <br />
+      </p>
+    </div>
+  ),
+  stack: (
+    <div>
+      <p>
+        ⚙ Frontend <br />
+        &emsp; • React.js with Hooks
+        <br />
+        &emsp; • Html, Css, Javascript
+        <br />
+        &emsp; • Material UI
+        <br />
+        ⚙ Backend <br />
+        &emsp; • Node.js with Express.js (RESTful API)
+        <br />
+        ⚙ Database
+        <br />
+        &emsp; • MongoDB with Mongoose [For User Data] <br />
+        &emsp; • Cloud Firestore (For Global Realtime chatbox and Admin
+        Blogposts)
+        <br />
+        ⚙ Deployment
+        <br />
+        &emsp; • Frontend on Firebase and Backend on Heroku <br />
+      </p>
+    </div>
+  ),
+  projectLink: "https://visite-place-tracker.web.app/",
+  githubLink: "https://github.com/devstardude/Visite-place-tracker",
 };
 
 export default LatestProject;

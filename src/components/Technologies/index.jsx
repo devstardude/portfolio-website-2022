@@ -11,30 +11,58 @@ import {
 } from "react-icons/ai";
 import { FaGitAlt } from "react-icons/fa";
 
-import'./style.css';
+import "./style.css";
+import { motion } from "framer-motion";
+
+const boxList = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
 
 const Technologies = (props) => {
   return (
     <section id="technologies" className="Tech-Main-Wrapper">
-      <Title
-        title="Technologies"
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        viewport={{ once: true }}
       >
-        I&apos;ve worked with a range a technologies in the programming world. Be it
-        Full Stack web application, Designing, Project management or Bot
-        creation.
-      </Title>
-      <div className="Tech-Techbox-Wrapper">
-        <div className="Tech-Techbox-Grid">
-          {techs.map((tech) => (
-            <TechBox
-              key={tech.title}
-              techTitle={tech.title}
-              desc={tech.desc}
-              icon={tech.icon}
-            />
-          ))}
+        <Title title="Technologies">
+          I&apos;ve worked with a range a technologies in the programming world.
+          Be it Full Stack web application, Designing, Project management or Bot
+          creation.
+        </Title>
+        <div className="Tech-Techbox-Wrapper">
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={boxList}
+            className="Tech-Techbox-Grid"
+          >
+            {techs.map((tech) => (
+              <TechBox
+                key={tech.title}
+                techTitle={tech.title}
+                desc={tech.desc}
+                icon={tech.icon}
+              />
+            ))}
+          </motion.li>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

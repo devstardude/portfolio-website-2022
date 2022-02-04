@@ -79,10 +79,10 @@ export default function ProjectInfoTabs(props) {
          <Links {...props} />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <Features/>
+          <Features {...props} />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          <Stack/>
+          <Stack {...props} />
         </TabPanel>
       </SwipeableViews>
     </div>

@@ -17,7 +17,7 @@ const ModalComponent = (props) => {
 
   return (
     <React.Fragment>
-      <div className="Font-mulish cursor-pointer h-full" onClick={handleOpen}>
+      <div className="cursor-pointer h-full" onClick={handleOpen}>
         {props.children}
       </div>
       <Modal

@@ -14,7 +14,12 @@ const Contact = (props) => {
         <p className="text-slate-400 text-[20px] pb-[15px] flex items-center">
           <HiOutlineMail className="mr-[10px]" color="#E34134" /> Mail me
         </p>
-        <p className="text-slate-200 text-[20px]">devstardude@gmail.com</p>
+        <a
+          href="mailto:arunshekhar001@gmail.com"
+          className="text-slate-200 text-[20px]"
+        >
+          devstardude@gmail.com
+        </a>
       </div>
     </section>
   );

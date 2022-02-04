@@ -6,8 +6,8 @@
   @apply h-[35vh] md:h-[40vh];
 }
 .Scrollable-Div {
-  @apply h-[53vh] w-full overflow-x-auto;
-  @apply px-0 md:px-0;
+  @apply h-[60vh] w-full overflow-x-auto;
+  @apply mt-4 px-0 md:px-0;
 }
 
 .ProjectLayout-ButtonWrapper {
@@ -18,6 +18,17 @@
   @apply py-[8px] md:py-[10px] w-[150px];
   @apply text-white text-[15px];
   @apply hover:bg-red-800 hover:bg-opacity-80;
+}
+
+.ProjectInfoTab-Title {
+  font-family: "Mulish", sans-serif;
+  @apply text-white px-5 pt-3 pb-2;
+  @apply text-[16px] md:text-[20px];
+}
+
+.ProjectInfoTab-desc p {
+  font-family: "Mulish", sans-serif;
+  @apply text-white pl-5 leading-[2.5rem];
 }
 
 .Scrollable-Div::-webkit-scrollbar {

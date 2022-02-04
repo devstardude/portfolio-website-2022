@@ -34,7 +34,8 @@ const SocialLinks = (props) => {
       <div className="">
         <motion.ul
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={list}
           className="flex w-[220px] justify-between"
         >

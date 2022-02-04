@@ -1,6 +1,7 @@
 body {
   background-color: #0f1624;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 .Font-explatus {
   font-family: "Expletus Sans", sans-serif;
@@ -9,7 +10,7 @@ body {
   font-family: "Mulish", sans-serif;
 }
 .App-Secondary-Components{
-     @apply  px-[2.5rem] md:px-[5rem] lg:px-[6rem] xl:px-[6.5rem];
+     @apply  px-[2rem] md:px-[5rem] lg:px-[6rem] xl:px-[6.5rem];
 }
 .noselect {
   -webkit-touch-callout: none;
